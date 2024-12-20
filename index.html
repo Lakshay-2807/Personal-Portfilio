@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakshay's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+            padding: 0 20px;
+        }
+
+        nav .left {
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+
+        nav ul {
+            display: flex;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            transition: color 0.3s ease;
+        }
+
+        main {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 80px;
+        }
+
+        .firstSection .leftSection {
+            max-width: 50%;
+        }
+
+        .firstSection h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .firstSection p {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: rgb(170, 170, 228);
+        }
+
+        .rightSection img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .secondSection {
+            text-align: center;
+        }
+
+        .secondSection h1 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .skill-box {
+            background-color: rgb(18, 18, 62);
+            border-radius: 10px;
+            width: 200px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-box:hover {
+            transform: translateY(-10px);
+        }
+
+        .skill-box img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: purple;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Lakshay's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1>Hi, I'm Lakshay</h1>
+                <p>A passionate Programmer and Web Developer.</p>
+                <p>I enjoy coding, solving problems, and building responsive websites.</p>
+            </div>
+            <div class="rightSection">
+                <img src="a.png.jpg" alt="Lakshay's profile picture">
+            </div>
+        </section>
+
+        <hr style="border: 0; height: 1px; background-color: #9c97f1; margin: 60px 0;">
+
+        <section class="secondSection">
+            <h1>My Skills</h1>
+            <div class="skills">
+                <div class="skill-box">
+                    <img src="c.png.png" alt="C++ logo">
+                    <h3>C/C++</h3>
+                </div>
+                <div class="skill-box">
+                    <img src="d.svg" alt="Java logo">
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-box">
+                    <img src="sql.png" alt="MySQL logo">
+                    <h3>MySQL</h3>
+                </div>
+                <div class="skill-box">
+                    <img src="html.png" alt="HTML logo">
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-box">
+                    <img src="css.png" alt="CSS logo">
+                    <h3>CSS</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h3>Lakshay's Developer Portfolio</h3>
+        <p>Contact me for web development and programming projects.</p>
+    </footer>
+</body>
+
+</html>
